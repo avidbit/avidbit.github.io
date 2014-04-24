@@ -1,0 +1,25 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background:#ffffff url("/images/bg.gif") repeat right top;
+  color: #000000;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	background: #ffffff;
+}

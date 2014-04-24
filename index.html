@@ -1,1 +1,131 @@
-Placeholder
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="ico/favicon.ico">
+
+  <title>AvidBit</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body role="document" data-spy="scroll" data-target="#target_nav">
+      <style>
+        div#scroll-able {
+          height: 100%;
+          width: 100%;
+          overflow: scroll;
+          overflow-x: hidden;
+        }
+      </style>
+      <script>
+        function last_item_height(id) {
+          $('#' + id).css('height', $(window).height() + 'px');
+        }
+      </script>
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-offset="100" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AvidBit</a>
+          </div>
+
+          <div class="navbar-collapse collapse pull-right">
+            <nav id="target_nav" class="">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#about">About</a></li>
+                <li><a href="#contact" onClick="last_item_height('contact')">Contact</a></li>
+              </ul>
+            </nav>
+          </div><!--/.nav-collapse -->
+
+        </div>
+      </div>
+
+      <div class="container" role="main">
+        
+          <section id="about" class="content">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+              <h2 class="text-center">
+                Development
+                <br/>
+                Infrastructure
+                <br/>
+                Security
+              </h2>
+
+              <p>
+                Providing development and infrastructure services to businesses and individuals with an interest in gaining an effective and secure online presence
+              </p>
+              <p><a href="#contact" class="btn btn-primary btn-lg" role="button">Get in touch &raquo;</a></p>
+
+            </div>
+          </section>
+
+          <section id="contact" class="content" >
+           <div class="jumbotron">
+            <h2>Get in touch</h1>
+            <p>
+              Are you a robot? 
+            </p>
+            <p>
+              Name the unit of digital information which commonly consists of eight bits?   
+            </p>
+
+              <div class="centered">
+              <input style="width: 20%" type="text" id="key" placeholder="Answer here" class=""/>
+              <button type="button" id="btn2" class="btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="byte">
+              Hint
+              </button>
+              </div>
+            <p>
+            <span><div id="email">
+              <br/>
+              <br/>
+            </div></span>
+            </p>
+          </div>
+        </section>
+
+     
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/emaildeobfu.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btn2").popover({'trigger':'hover'});
+    });
+    </script>
+  </body>
+  </html>
